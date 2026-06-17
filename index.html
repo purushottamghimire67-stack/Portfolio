@@ -1,0 +1,1402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Web Portfolio</title>
+    <meta name="description" content="My personal web development portfolio">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body data-bs-spy="scroll" data-bs-target="#mainNav" data-bs-offset="100">
+
+    <!-- Scanline Overlay -->
+    <div class="scanlines"></div>
+
+    <!-- Custom Cursor -->
+    <div class="custom-cursor" id="cursor"></div>
+    <div class="custom-cursor-trail" id="cursorTrail"></div>
+
+    
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg fixed-top" id="mainNav">
+        <div class="container">
+            <a class="navbar-brand" href="#hero">
+                <span class="brand-bracket">[</span>PORTFOLIO<span class="brand-bracket">]</span>
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+             aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navMenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="#fullstack"><span class="nav-num">01</span> Full Stack</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#html"><span class="nav-num">02</span> HTML</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#css"><span class="nav-num">03</span> CSS</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#bootstrap"><span class="nav-num">04</span> Bootstrap</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#javascript"><span class="nav-num">05</span> JavaScript</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero-section">
+        <div class="container h-100">
+            <div class="row h-100 align-items-end">
+                <div class="col-lg-8 hero-content">
+                    <div class="status-tags mb-4">
+                        <span class="status-tag"><i class="fas fa-circle text-success me-2"></i>STATUS: ONLINE</span>
+                        <span class="status-tag">SYS.VER: 1.0.0</span>
+                        <span class="status-tag">STACK: FULL</span>
+                    </div>
+                    <h1 class="hero-title" id="typewriter-text"></h1>
+                    <p class="hero-subtitle">Building responsive web applications with modern technologies. Focused on performant, accessible, and interactive user experiences.</p>
+                    <div class="hero-actions">
+                        <a href="#fullstack" class="btn btn-primary btn-hero">EXPLORE PORTFOLIO <i class="fas fa-arrow-down ms-2"></i></a>
+                        <a href="#contact" class="btn btn-outline-light btn-hero">CONTACT ME</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Floating Code Elements -->
+        <div class="floating-code" id="floatingCode1">&lt;html&gt;</div>
+        <div class="floating-code" id="floatingCode2">{ }</div>
+        <div class="floating-code" id="floatingCode3">fn()</div>
+        <div class="floating-code" id="floatingCode4">#id</div>
+        <div class="floating-code" id="floatingCode5">margin</div>
+        <div class="floating-code" id="floatingCode6">grid</div>
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <div class="scroll-line"></div>
+            <span class="scroll-text">SCROLL</span>
+        </div>
+    </section>
+
+    <!-- Section 1: What is Full Stack Development -->
+    <section id="fullstack" class="content-section section-dark">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <div class="section-header">
+                        <span class="section-number">01</span>
+                        <span class="section-label">MODULE</span>
+                    </div>
+                    <h2 class="section-title">WHAT IS FULL STACK DEVELOPMENT?</h2>
+                    <p class="section-intro">Full Stack Development refers to the practice of working with both the <strong>frontend</strong> (client-side) and <strong>backend</strong> (server-side) portions of a web application, along with the <strong>database</strong> layer. A Full Stack Developer has the skills to build a complete web application from start to finish.</p>
+                </div>
+            </div>
+            
+            <!-- Interactive Architecture Diagram -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="architecture-diagram" id="archDiagram">
+                        <div class="arch-layer client-layer" data-layer="client">
+                            <div class="arch-icon"><i class="fas fa-desktop"></i></div>
+                            <div class="arch-content">
+                                <h4>CLIENT LAYER</h4>
+                                <p>Frontend Technologies</p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">HTML</span>
+                                    <span class="tech-tag">CSS</span>
+                                    <span class="tech-tag">JavaScript</span>
+                                    <span class="tech-tag">React</span>
+                                </div>
+                            </div>
+                            <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                        </div>
+                        <div class="arch-layer server-layer" data-layer="server">
+                            <div class="arch-icon"><i class="fas fa-server"></i></div>
+                            <div class="arch-content">
+                                <h4>SERVER LAYER</h4>
+                                <p>Backend Technologies</p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">Node.js</span>
+                                    <span class="tech-tag">Python</span>
+                                    <span class="tech-tag">PHP</span>
+                                    <span class="tech-tag">Express</span>
+                                </div>
+                            </div>
+                            <div class="arch-arrow"><i class="fas fa-arrow-down"></i></div>
+                        </div>
+                        <div class="arch-layer database-layer" data-layer="database">
+                            <div class="arch-icon"><i class="fas fa-database"></i></div>
+                            <div class="arch-content">
+                                <h4>DATABASE LAYER</h4>
+                                <p>Data Storage</p>
+                                <div class="tech-tags">
+                                    <span class="tech-tag">MySQL</span>
+                                    <span class="tech-tag">MongoDB</span>
+                                    <span class="tech-tag">PostgreSQL</span>
+                                    <span class="tech-tag">Redis</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Info Cards -->
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="info-card" id="frontendCard">
+                        <div class="card-icon"><i class="fas fa-code"></i></div>
+                        <h4>Frontend Development</h4>
+                        <p>The frontend is everything the user sees and interacts with in their browser. It involves creating the structure with HTML, styling with CSS, and adding interactivity with JavaScript. Modern frontend frameworks like React, Angular, and Vue help build complex, dynamic user interfaces.</p>
+                        <div class="card-hover-reveal">
+                            <span class="reveal-code">HTML + CSS + JS = UI</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-card" id="backendCard">
+                        <div class="card-icon"><i class="fas fa-server"></i></div>
+                        <h4>Backend Development</h4>
+                        <p>The backend is the server-side logic that processes requests, handles authentication, manages business logic, and serves data to the frontend. It runs on a server and communicates with both the client and the database. Common technologies include Node.js, Python, PHP, and Java.</p>
+                        <div class="card-hover-reveal">
+                            <span class="reveal-code">Server + API + Logic</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="info-card" id="databaseCard">
+                        <div class="card-icon"><i class="fas fa-database"></i></div>
+                        <h4>Database Management</h4>
+                        <p>Databases store and organize all the data an application needs. SQL databases (MySQL, PostgreSQL) use structured tables with relationships, while NoSQL databases (MongoDB) store data in flexible, document-based formats. Understanding both is crucial for full stack development.</p>
+                        <div class="card-hover-reveal">
+                            <span class="reveal-code">SQL + NoSQL = Data</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Interactive Request Flow -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="request-flow-demo">
+                        <h4 class="demo-title"><i class="fas fa-play-circle me-2"></i>INTERACTIVE REQUEST FLOW DEMO</h4>
+                        <p class="demo-desc">Click the button below to simulate how a request flows through the full stack:</p>
+                        <div class="flow-container">
+                            <div class="flow-step" id="step1">
+                                <div class="flow-circle"><i class="fas fa-user"></i></div>
+                                <span class="flow-label">User Request</span>
+                            </div>
+                            <div class="flow-connector" id="conn1"></div>
+                            <div class="flow-step" id="step2">
+                                <div class="flow-circle"><i class="fas fa-globe"></i></div>
+                                <span class="flow-label">DNS / Internet</span>
+                            </div>
+                            <div class="flow-connector" id="conn2"></div>
+                            <div class="flow-step" id="step3">
+                                <div class="flow-circle"><i class="fas fa-server"></i></div>
+                                <span class="flow-label">Web Server</span>
+                            </div>
+                            <div class="flow-connector" id="conn3"></div>
+                            <div class="flow-step" id="step4">
+                                <div class="flow-circle"><i class="fas fa-cogs"></i></div>
+                                <span class="flow-label">App Logic</span>
+                            </div>
+                            <div class="flow-connector" id="conn4"></div>
+                            <div class="flow-step" id="step5">
+                                <div class="flow-circle"><i class="fas fa-database"></i></div>
+                                <span class="flow-label">Database</span>
+                            </div>
+                            <div class="flow-connector" id="conn5"></div>
+                            <div class="flow-step" id="step6">
+                                <div class="flow-circle"><i class="fas fa-file-code"></i></div>
+                                <span class="flow-label">Response</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary mt-4" id="runFlowBtn" onclick="runRequestFlow()">
+                            <i class="fas fa-play me-2"></i>RUN REQUEST FLOW
+                        </button>
+                        <div class="flow-console mt-3" id="flowConsole">
+                            <div class="console-header">Console Output</div>
+                            <div class="console-body" id="consoleBody">
+                                <span class="console-prompt">$</span> Waiting for request simulation...
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reflection -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="reflection-card p-4 rounded" style="background-color: #1e2130; border-left: 4px solid #ff471d;">
+                        <h4 style="color: #ffffff;"><i class="fas fa-lightbulb me-2 text-warning"></i>Reflection: What I Learned</h4>
+                        <p class="mb-0" style="color: #cccccc;">Through building this section, I learned how disparate technologies integrate into a single cohesive system. I realized that while writing frontend code is highly visual, understanding how to structure data and design efficient APIs on the backend is just as critical for a functional application. I now feel much more confident discussing the full software development lifecycle.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 2: HTML -->
+    <section id="html" class="content-section section-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <div class="section-header">
+                        <span class="section-number">02</span>
+                        <span class="section-label">MARKUP</span>
+                    </div>
+                    <h2 class="section-title">HTML - HYPERTEXT MARKUP LANGUAGE</h2>
+                    <p class="section-intro">HTML (HyperText Markup Language) is the standard markup language for documents designed to be displayed in a web browser. It defines the structure and semantic meaning of web content using <strong>elements</strong> and <strong>tags</strong>.</p>
+                </div>
+            </div>
+
+            <!-- HTML Live Editor -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="code-playground">
+                        <div class="playground-header">
+                            <h4><i class="fas fa-code me-2"></i>LIVE HTML EDITOR</h4>
+                            <p class="playground-desc">Type HTML code in the editor and see it rendered live!</p>
+                        </div>
+                        <div class="row g-0">
+                            <div class="col-md-6">
+                                <div class="editor-panel">
+                                    <div class="editor-toolbar">
+                                        <span class="toolbar-label">index.html</span>
+                                        <button class="btn btn-sm btn-outline-secondary" onclick="resetHtmlEditor()">Reset</button>
+                                    </div>
+                                    <textarea class="code-editor" id="htmlEditor" spellcheck="false">&lt;!-- Try editing this HTML! --&gt;
+&lt;div class=&quot;my-card&quot;&gt;
+  &lt;h3&gt;Hello World!&lt;/h3&gt;
+  &lt;p&gt;This is a &lt;strong&gt;live&lt;/strong&gt; preview.&lt;/p&gt;
+  &lt;button class=&quot;btn&quot;&gt;Click Me!&lt;/button&gt;
+&lt;/div&gt;
+&lt;style&gt;
+  .my-card {
+    background: #f0f0f0;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+  }
+  .my-card h3 { color: #ff471d; }
+  .my-card button {
+    background: #ff471d;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+&lt;/style&gt;</textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="preview-panel">
+                                    <div class="preview-toolbar">
+                                        <span class="toolbar-label">Browser Preview</span>
+                                        <div class="window-controls">
+                                            <span></span><span></span><span></span>
+                                        </div>
+                                    </div>
+                                    <iframe class="preview-frame" id="htmlPreview"></iframe>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Semantic HTML Demo -->
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <h4 class="subsection-title">SEMANTIC HTML STRUCTURE</h4>
+                    <p class="subsection-desc">Semantic HTML uses meaningful tags that describe the content's purpose. This improves accessibility, SEO, and code readability.</p>
+                    
+                    <div class="semantic-demo" id="semanticDemo">
+                        <div class="semantic-toggle">
+                            <button class="btn btn-sm active" onclick="showSemantic('basic', this)">Basic divs</button>
+                            <button class="btn btn-sm" onclick="showSemantic('semantic', this)">Semantic HTML5</button>
+                        </div>
+                        
+                        <div class="semantic-view active" id="basicView">
+                            <pre class="code-block"><code>&lt;div class=&quot;header&quot;&gt;
+  &lt;div class=&quot;nav&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;main&quot;&gt;
+  &lt;div class=&quot;article&quot;&gt;...&lt;/div&gt;
+  &lt;div class=&quot;sidebar&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;footer&quot;&gt;...&lt;/div&gt;</code></pre>
+                            <div class="semantic-visual">
+                                <div class="sv-div sv-header">&lt;div class="header"&gt;</div>
+                                <div class="sv-div sv-nav">&lt;div class="nav"&gt;</div>
+                                <div class="sv-div sv-main">
+                                    <div class="sv-div sv-article">&lt;div class="article"&gt;</div>
+                                    <div class="sv-div sv-sidebar">&lt;div class="sidebar"&gt;</div>
+                                </div>
+                                <div class="sv-div sv-footer">&lt;div class="footer"&gt;</div>
+                            </div>
+                        </div>
+                        
+                        <div class="semantic-view" id="semanticView">
+                            <pre class="code-block"><code>&lt;header&gt;
+  &lt;nav&gt;...&lt;/nav&gt;
+&lt;/header&gt;
+&lt;main&gt;
+  &lt;article&gt;...&lt;/article&gt;
+  &lt;aside&gt;...&lt;/aside&gt;
+&lt;/main&gt;
+&lt;footer&gt;...&lt;/footer&gt;</code></pre>
+                            <div class="semantic-visual">
+                                <div class="sv-tag sv-header">&lt;header&gt;</div>
+                                <div class="sv-tag sv-nav">&lt;nav&gt;</div>
+                                <div class="sv-tag sv-main">
+                                    <div class="sv-tag sv-article">&lt;article&gt;</div>
+                                    <div class="sv-tag sv-aside">&lt;aside&gt;</div>
+                                </div>
+                                <div class="sv-tag sv-footer">&lt;footer&gt;</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="subsection-title">COMMON HTML ELEMENTS</h4>
+                    <div class="elements-grid" id="elementsGrid">
+                        <div class="element-card" data-element="heading">
+                            <i class="fas fa-heading"></i>
+                            <span>&lt;h1&gt; - &lt;h6&gt;</span>
+                            <div class="element-tooltip">Heading elements define document hierarchy</div>
+                        </div>
+                        <div class="element-card" data-element="paragraph">
+                            <i class="fas fa-paragraph"></i>
+                            <span>&lt;p&gt;</span>
+                            <div class="element-tooltip">Defines a paragraph of text</div>
+                        </div>
+                        <div class="element-card" data-element="link">
+                            <i class="fas fa-link"></i>
+                            <span>&lt;a&gt;</span>
+                            <div class="element-tooltip">Creates hyperlinks to other pages</div>
+                        </div>
+                        <div class="element-card" data-element="image">
+                            <i class="fas fa-image"></i>
+                            <span>&lt;img&gt;</span>
+                            <div class="element-tooltip">Embeds images in the document</div>
+                        </div>
+                        <div class="element-card" data-element="list">
+                            <i class="fas fa-list"></i>
+                            <span>&lt;ul&gt; / &lt;ol&gt;</span>
+                            <div class="element-tooltip">Unordered and ordered lists</div>
+                        </div>
+                        <div class="element-card" data-element="form">
+                            <i class="fas fa-wpforms"></i>
+                            <span>&lt;form&gt;</span>
+                            <div class="element-tooltip">Contains input elements for user data</div>
+                        </div>
+                        <div class="element-card" data-element="table">
+                            <i class="fas fa-table"></i>
+                            <span>&lt;table&gt;</span>
+                            <div class="element-tooltip">Structures data in rows and columns</div>
+                        </div>
+                        <div class="element-card" data-element="div">
+                            <i class="fas fa-square"></i>
+                            <span>&lt;div&gt;</span>
+                            <div class="element-tooltip">Generic container for grouping content</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HTML Forms Demo -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="forms-demo">
+                        <h4 class="subsection-title"><i class="fas fa-wpforms me-2"></i>INTERACTIVE FORM ELEMENTS</h4>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <form id="demoForm" onsubmit="handleFormSubmit(event)">
+                                    <div class="mb-3">
+                                        <label class="form-label">Text Input</label>
+                                        <input type="text" class="form-control" placeholder="Type something..." id="formText" oninput="updateFormOutput()">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Email Input</label>
+                                        <input type="email" class="form-control" placeholder="your@email.com" id="formEmail" oninput="updateFormOutput()">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Select Dropdown</label>
+                                        <select class="form-select" id="formSelect" onchange="updateFormOutput()">
+                                            <option value="">Choose...</option>
+                                            <option value="frontend">Frontend</option>
+                                            <option value="backend">Backend</option>
+                                            <option value="fullstack">Full Stack</option>
+                                        </select>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Range Slider</label>
+                                        <input type="range" class="form-range" min="0" max="100" id="formRange" oninput="updateFormOutput()">
+                                    </div>
+                                    <div class="mb-3">
+                                        <label class="form-label">Checkbox</label>
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="formCheck" onchange="updateFormOutput()">
+                                            <label class="form-check-label">I agree to the terms</label>
+                                        </div>
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Submit Form</button>
+                                </form>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-output" id="formOutput">
+                                    <div class="output-header">Live Form Data</div>
+                                    <pre id="formDataDisplay">Fill out the form to see the data object...</pre>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- HTML Table & Image Demo -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <h4 class="subsection-title"><i class="fas fa-table me-2"></i>TABLES & IMAGES</h4>
+                    <p class="subsection-desc">Demonstrating semantic data structures and media embedding.</p>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <table class="table table-dark table-hover table-bordered mb-0">
+                                <thead style="background-color: var(--bg-accent);">
+                                    <tr>
+                                        <th>Tag Name</th>
+                                        <th>Description</th>
+                                        <th>Type</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td><code>&lt;table&gt;</code></td>
+                                        <td>Defines the table wrapper</td>
+                                        <td>Semantic</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;tr&gt;</code></td>
+                                        <td>Defines a table row</td>
+                                        <td>Structural</td>
+                                    </tr>
+                                    <tr>
+                                        <td><code>&lt;th&gt; / &lt;td&gt;</code></td>
+                                        <td>Table header / data cell</td>
+                                        <td>Data</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-md-6 text-center mb-4">
+                            <div style="background: var(--bg-darker); border: 1px dashed #555; border-radius: 8px; padding: 20px; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
+                                <img src="https://via.placeholder.com/150/ff471d/ffffff?text=HTML5" alt="" style="border-radius: 50%; width: 100px; height: 100px; margin-bottom: 15px; box-shadow: 0 0 15px rgba(255, 71, 29, 0.4);">
+                                <p class="mb-0 text-muted"><code>&lt;img src="..." alt="HTML5 Logo"&gt;</code></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reflection -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="reflection-card p-4 rounded" style="background-color: #1e2130; border-left: 4px solid #ff471d;">
+                        <h4 style="color: #ffffff;"><i class="fas fa-lightbulb me-2 text-warning"></i>Reflection: What I Learned</h4>
+                        <p class="mb-0" style="color: #cccccc;">Through this exercise I learned how HTML structures web pages using semantic elements such as headings, paragraphs, forms and tables. Transitioning from generic &lt;div&gt; tags to semantic tags changed how I think about web accessibility. I now understand that a solid HTML foundation is essential before applying styling or logic.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 3: CSS -->
+    <section id="css" class="content-section section-dark">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <div class="section-header">
+                        <span class="section-number">03</span>
+                        <span class="section-label">STYLES</span>
+                    </div>
+                    <h2 class="section-title">CSS - CASCADING STYLE SHEETS</h2>
+                    <p class="section-intro">CSS is a stylesheet language used to describe the presentation of a document written in HTML. It controls layout, colors, fonts, animations, and responsive design — transforming raw HTML into beautiful, usable interfaces.</p>
+                </div>
+            </div>
+
+            <!-- CSS Property Playground -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="css-playground">
+                        <div class="playground-header">
+                            <h4><i class="fas fa-sliders-h me-2"></i>CSS PROPERTY PLAYGROUND</h4>
+                            <p class="playground-desc">Adjust the sliders to see how CSS properties transform an element in real-time!</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-4">
+                                <div class="css-controls">
+                                    <div class="control-group">
+                                        <label>border-radius: <span id="radiusVal">0</span>px</label>
+                                        <input type="range" class="form-range" min="0" max="50" value="0" id="borderRadius" oninput="updateCssPlayground()">
+                                    </div>
+                                    <div class="control-group">
+                                        <label>transform: rotate(<span id="rotateVal">0</span>deg)</label>
+                                        <input type="range" class="form-range" min="0" max="360" value="0" id="rotate" oninput="updateCssPlayground()">
+                                    </div>
+                                    <div class="control-group">
+                                        <label>filter: blur(<span id="blurVal">0</span>px)</label>
+                                        <input type="range" class="form-range" min="0" max="10" value="0" id="blur" oninput="updateCssPlayground()">
+                                    </div>
+                                    <div class="control-group">
+                                        <label>opacity: <span id="opacityVal">1</span></label>
+                                        <input type="range" class="form-range" min="0" max="100" value="100" id="opacity" oninput="updateCssPlayground()">
+                                    </div>
+                                    <div class="control-group">
+                                        <label>scale: <span id="scaleVal">1</span></label>
+                                        <input type="range" class="form-range" min="50" max="200" value="100" id="scale" oninput="updateCssPlayground()">
+                                    </div>
+                                    <div class="control-group">
+                                        <label>Background Color</label>
+                                        <div class="color-picker-row">
+                                            <button class="color-btn" style="background:#ff471d" onclick="setBgColor('#ff471d')"></button>
+                                            <button class="color-btn" style="background:#4CAF50" onclick="setBgColor('#4CAF50')"></button>
+                                            <button class="color-btn" style="background:#2196F3" onclick="setBgColor('#2196F3')"></button>
+                                            <button class="color-btn" style="background:#9C27B0" onclick="setBgColor('#9C27B0')"></button>
+                                            <button class="color-btn" style="background:#FF9800" onclick="setBgColor('#FF9800')"></button>
+                                            <button class="color-btn" style="background:#E91E63" onclick="setBgColor('#E91E63')"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="css-preview-area">
+                                    <div class="css-preview-box" id="cssPreviewBox">
+                                        <span>BOX</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4">
+                                <div class="css-code-output">
+                                    <div class="code-header">Generated CSS</div>
+                                    <pre id="cssCodeOutput"><code>.box {
+  border-radius: 0px;
+  transform: rotate(0deg) scale(1);
+  filter: blur(0px);
+  opacity: 1;
+  background-color: #ff471d;
+}</code></pre>
+                                    <button class="btn btn-sm btn-outline-light mt-2" onclick="resetCssPlayground()">Reset</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Flexbox vs Grid -->
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <h4 class="subsection-title">FLEXBOX LAYOUT</h4>
+                    <p class="subsection-desc">Flexbox is a one-dimensional layout method for arranging items in rows or columns.</p>
+                    <div class="layout-demo">
+                        <div class="layout-controls mb-3">
+                            <button class="btn btn-sm btn-outline-light" onclick="setFlexDirection('row')">row</button>
+                            <button class="btn btn-sm btn-outline-light" onclick="setFlexDirection('column')">column</button>
+                            <button class="btn btn-sm btn-outline-light" onclick="setJustify('center')">justify: center</button>
+                            <button class="btn btn-sm btn-outline-light" onclick="setJustify('space-between')">justify: space-between</button>
+                        </div>
+                        <div class="flexbox-container" id="flexboxContainer">
+                            <div class="flex-item">1</div>
+                            <div class="flex-item">2</div>
+                            <div class="flex-item">3</div>
+                            <div class="flex-item">4</div>
+                        </div>
+                        <pre class="code-block mt-3" id="flexCode"><code>.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}</code></pre>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="subsection-title">CSS GRID LAYOUT</h4>
+                    <p class="subsection-desc">CSS Grid is a two-dimensional layout system for rows and columns simultaneously.</p>
+                    <div class="layout-demo">
+                        <div class="layout-controls mb-3">
+                            <button class="btn btn-sm btn-outline-light" onclick="setGridCols(2)">2 columns</button>
+                            <button class="btn btn-sm btn-outline-light" onclick="setGridCols(3)">3 columns</button>
+                            <button class="btn btn-sm btn-outline-light" onclick="setGridCols(4)">4 columns</button>
+                            <button class="btn btn-sm btn-outline-light" onclick="toggleGridGap()">toggle gap</button>
+                        </div>
+                        <div class="grid-container" id="gridContainer">
+                            <div class="grid-item">1</div>
+                            <div class="grid-item">2</div>
+                            <div class="grid-item">3</div>
+                            <div class="grid-item">4</div>
+                            <div class="grid-item">5</div>
+                            <div class="grid-item">6</div>
+                        </div>
+                        <pre class="code-block mt-3" id="gridCode"><code>.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}</code></pre>
+                    </div>
+                </div>
+            </div>
+
+            <!-- CSS Animations -->
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="subsection-title"><i class="fas fa-magic me-2"></i>CSS ANIMATIONS DEMO</h4>
+                    <div class="animations-showcase">
+                        <div class="animation-card">
+                            <div class="anim-box anim-bounce"></div>
+                            <span class="anim-label">@keyframes bounce</span>
+                            <pre class="anim-code"><code>@keyframes bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-30px); }
+}</code></pre>
+                        </div>
+                        <div class="animation-card">
+                            <div class="anim-box anim-pulse"></div>
+                            <span class="anim-label">@keyframes pulse</span>
+                            <pre class="anim-code"><code>@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}</code></pre>
+                        </div>
+                        <div class="animation-card">
+                            <div class="anim-box anim-spin"></div>
+                            <span class="anim-label">@keyframes spin</span>
+                            <pre class="anim-code"><code>@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}</code></pre>
+                        </div>
+                        <div class="animation-card">
+                            <div class="anim-box anim-shake"></div>
+                            <span class="anim-label">@keyframes shake</span>
+                            <pre class="anim-code"><code>@keyframes shake {
+  0%, 100% { transform: translateX(0); }
+  25% { transform: translateX(-10px); }
+  75% { transform: translateX(10px); }
+}</code></pre>
+                        </div>
+                        <div class="animation-card">
+                            <div class="anim-box anim-glow"></div>
+                            <span class="anim-label">@keyframes glow</span>
+                            <pre class="anim-code"><code>@keyframes glow {
+  0%, 100% { box-shadow: 0 0 5px #ff471d; }
+  50% { box-shadow: 0 0 25px #ff471d; }
+}</code></pre>
+                        </div>
+
+            <!-- Reflection -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="reflection-card p-4 rounded" style="background-color: #1e2130; border-left: 4px solid #ff471d;">
+                        <h4 style="color: #ffffff;"><i class="fas fa-lightbulb me-2 text-warning"></i>Reflection: What I Learned</h4>
+                        <p class="mb-0" style="color: #cccccc;">Working heavily with CSS taught me the immense power of modern layout systems like Flexbox and Grid. Previously, I struggled with centering elements or making responsive grids, but mastering these tools has made building layouts intuitive. I also learned that CSS variables are a game-changer for maintaining a consistent design system.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Section 4: Bootstrap Framework -->
+    <section id="bootstrap" class="content-section section-light">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <div class="section-header">
+                        <span class="section-number">04</span>
+                        <span class="section-label">FRAMEWORK</span>
+                    </div>
+                    <h2 class="section-title">BOOTSTRAP FRAMEWORK</h2>
+                    <p class="section-intro">Bootstrap is the world's most popular frontend open-source toolkit. It features a responsive grid system, extensive pre-built components, and powerful JavaScript plugins that help developers build responsive, mobile-first websites quickly.</p>
+                </div>
+            </div>
+
+            <!-- Bootstrap Grid Visualizer -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="grid-visualizer">
+                        <div class="playground-header">
+                            <h4><i class="fas fa-th me-2"></i>BOOTSTRAP GRID VISUALIZER</h4>
+                            <p class="playground-desc">Toggle between breakpoints to see how the 12-column grid adapts responsively!</p>
+                        </div>
+                        <div class="breakpoint-controls">
+                            <button class="btn btn-sm active" onclick="setBreakpoint('xs', this)" data-bs-toggle="tooltip" title="<576px">
+                                <i class="fas fa-mobile-alt"></i> XS
+                            </button>
+                            <button class="btn btn-sm" onclick="setBreakpoint('sm', this)" data-bs-toggle="tooltip" title="≥576px">
+                                <i class="fas fa-mobile-alt"></i> SM
+                            </button>
+                            <button class="btn btn-sm" onclick="setBreakpoint('md', this)" data-bs-toggle="tooltip" title="≥768px">
+                                <i class="fas fa-tablet-alt"></i> MD
+                            </button>
+                            <button class="btn btn-sm" onclick="setBreakpoint('lg', this)" data-bs-toggle="tooltip" title="≥992px">
+                                <i class="fas fa-laptop"></i> LG
+                            </button>
+                            <button class="btn btn-sm" onclick="setBreakpoint('xl', this)" data-bs-toggle="tooltip" title="≥1200px">
+                                <i class="fas fa-desktop"></i> XL
+                            </button>
+                        </div>
+                        <div class="grid-visual" id="gridVisual">
+                            <div class="grid-row" id="gridRow1">
+                                <div class="grid-col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-cols="2" data-cols-sm="6" data-cols-md="4" data-cols-lg="3" data-cols-xl="2">
+                                    <span>.col</span>
+                                </div>
+                                <div class="grid-col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-cols="2" data-cols-sm="6" data-cols-md="4" data-cols-lg="3" data-cols-xl="2">
+                                    <span>.col</span>
+                                </div>
+                                <div class="grid-col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-cols="2" data-cols-sm="6" data-cols-md="4" data-cols-lg="3" data-cols-xl="2">
+                                    <span>.col</span>
+                                </div>
+                                <div class="grid-col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-cols="2" data-cols-sm="6" data-cols-md="4" data-cols-lg="3" data-cols-xl="2">
+                                    <span>.col</span>
+                                </div>
+                                <div class="grid-col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-cols="2" data-cols-sm="6" data-cols-md="4" data-cols-lg="3" data-cols-xl="2">
+                                    <span>.col</span>
+                                </div>
+                                <div class="grid-col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2" data-cols="2" data-cols-sm="6" data-cols-md="4" data-cols-lg="3" data-cols-xl="2">
+                                    <span>.col</span>
+                                </div>
+                            </div>
+                            <div class="grid-row mt-2" id="gridRow2">
+                                <div class="grid-col col-12 col-md-8 col-lg-9" data-cols="2" data-cols-md="8" data-cols-lg="9">
+                                    <span>.col-8 / .col-lg-9</span>
+                                </div>
+                                <div class="grid-col col-12 col-md-4 col-lg-3" data-cols="2" data-cols-md="4" data-cols-lg="3">
+                                    <span>.col-4 / .col-lg-3</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="code-output mt-3">
+                            <pre id="gridCodeOutput"><code>&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-12 col-sm-6 col-md-4 col-lg-3 col-xl-2&quot;&gt;.col&lt;/div&gt;
+  &lt;!-- 6 columns --&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+  &lt;div class=&quot;col-12 col-md-8 col-lg-9&quot;&gt;Main&lt;/div&gt;
+  &lt;div class=&quot;col-12 col-md-4 col-lg-3&quot;&gt;Sidebar&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap Components Showcase -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h4 class="subsection-title"><i class="fas fa-cubes me-2"></i>BOOTSTRAP COMPONENTS</h4>
+                    <p class="subsection-desc">Bootstrap provides dozens of reusable components for common UI patterns. Click the tabs to explore different component categories.</p>
+                    
+                    <div class="components-tabs">
+                        <ul class="nav nav-pills mb-3" id="componentsTab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="cards-tab" data-bs-toggle="pill" data-bs-target="#cards" type="button" role="tab">Cards</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="alerts-tab" data-bs-toggle="pill" data-bs-target="#alerts" type="button" role="tab">Alerts</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="buttons-tab" data-bs-toggle="pill" data-bs-target="#buttons" type="button" role="tab">Buttons</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="modal-tab" data-bs-toggle="pill" data-bs-target="#modal" type="button" role="tab">Modal</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="carousel-tab" data-bs-toggle="pill" data-bs-target="#carousel" type="button" role="tab">Carousel</button>
+                            </li>
+                        </ul>
+                        
+                        <div class="tab-content" id="componentsTabContent">
+                            <div class="tab-pane fade show active" id="cards" role="tabpanel">
+                                <div class="row g-4">
+                                    <div class="col-md-4">
+                                        <div class="card h-100">
+                                            <div class="card-body">
+                                                <h5 class="card-title">Basic Card</h5>
+                                                <p class="card-text">A card is a flexible container with header, body, and footer sections.</p>
+                                                <a href="#" class="btn btn-sm btn-primary">Go somewhere</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card h-100 border-primary">
+                                            <div class="card-header bg-primary text-white">Featured</div>
+                                            <div class="card-body">
+                                                <h5 class="card-title">Card with Header</h5>
+                                                <p class="card-text">Cards can have contextual headers and footers.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card h-100 text-center">
+                                            <div class="card-header">Quote</div>
+                                            <div class="card-body">
+                                                <blockquote class="blockquote mb-0">
+                                                    <p>Bootstrap makes responsive design easy.</p>
+                                                    <footer class="blockquote-footer">A <cite>Developer</cite></footer>
+                                                </blockquote>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="alerts" role="tabpanel">
+                                <div class="alert-demo">
+                                    <div class="alert alert-primary" role="alert"><i class="fas fa-info-circle me-2"></i>A primary alert—check it out!</div>
+                                    <div class="alert alert-success" role="alert"><i class="fas fa-check-circle me-2"></i>A success alert—operation completed!</div>
+                                    <div class="alert alert-warning" role="alert"><i class="fas fa-exclamation-triangle me-2"></i>A warning alert—be careful!</div>
+                                    <div class="alert alert-danger" role="alert"><i class="fas fa-times-circle me-2"></i>A danger alert—something went wrong!</div>
+                                    <div class="alert alert-info" role="alert"><i class="fas fa-lightbulb me-2"></i>An info alert—here's a tip!</div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="buttons" role="tabpanel">
+                                <div class="buttons-demo">
+                                    <div class="mb-3">
+                                        <h6>Standard Buttons</h6>
+                                        <button class="btn btn-primary">Primary</button>
+                                        <button class="btn btn-secondary">Secondary</button>
+                                        <button class="btn btn-success">Success</button>
+                                        <button class="btn btn-danger">Danger</button>
+                                        <button class="btn btn-warning">Warning</button>
+                                        <button class="btn btn-info">Info</button>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h6>Outline Buttons</h6>
+                                        <button class="btn btn-outline-primary">Primary</button>
+                                        <button class="btn btn-outline-secondary">Secondary</button>
+                                        <button class="btn btn-outline-success">Success</button>
+                                        <button class="btn btn-outline-danger">Danger</button>
+                                    </div>
+                                    <div class="mb-3">
+                                        <h6>Button Sizes</h6>
+                                        <button class="btn btn-primary btn-lg">Large</button>
+                                        <button class="btn btn-primary">Default</button>
+                                        <button class="btn btn-primary btn-sm">Small</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="modal" role="tabpanel">
+                                <div class="modal-demo text-center">
+                                    <p>Click the button to launch a Bootstrap Modal component:</p>
+                                    <button type="button" class="btn btn-primary btn-lg" data-bs-toggle="modal" data-bs-target="#demoModal">
+                                        <i class="fas fa-window-restore me-2"></i>Launch Demo Modal
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade" id="carousel" role="tabpanel">
+                                <div id="demoCarousel" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-indicators">
+                                        <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="0" class="active"></button>
+                                        <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="1"></button>
+                                        <button type="button" data-bs-target="#demoCarousel" data-bs-slide-to="2"></button>
+                                    </div>
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="carousel-slide bg-primary text-white">
+                                                <h3>Slide 1</h3>
+                                                <p>Bootstrap carousel with automatic cycling and indicators.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-slide bg-success text-white">
+                                                <h3>Slide 2</h3>
+                                                <p>Fully responsive and touch-enabled on mobile devices.</p>
+                                            </div>
+                                        </div>
+                                        <div class="carousel-item">
+                                            <div class="carousel-slide bg-warning text-dark">
+                                                <h3>Slide 3</h3>
+                                                <p>Customizable with captions, controls, and transitions.</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" data-bs-target="#demoCarousel" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon"></span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" data-bs-target="#demoCarousel" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon"></span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bootstrap Utilities -->
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="subsection-title"><i class="fas fa-tools me-2"></i>BOOTSTRAP UTILITY CLASSES</h4>
+                    <p class="subsection-desc">Bootstrap includes hundreds of utility classes for spacing, colors, display, flex, and more. These classes help you quickly style elements without writing custom CSS.</p>
+                    <div class="utilities-demo">
+                        <div class="utility-section">
+                            <h6>Spacing (margin/padding)</h6>
+                            <div class="spacing-demo">
+                                <div class="spacer-box m-0">m-0</div>
+                                <div class="spacer-box m-1">m-1</div>
+                                <div class="spacer-box m-2">m-2</div>
+                                <div class="spacer-box m-3">m-3</div>
+                                <div class="spacer-box m-4">m-4</div>
+                                <div class="spacer-box m-5">m-5</div>
+                            </div>
+                        </div>
+                        <div class="utility-section">
+                            <h6>Text Colors</h6>
+                            <div class="color-demo">
+                                <span class="text-primary">.text-primary</span>
+                                <span class="text-secondary">.text-secondary</span>
+                                <span class="text-success">.text-success</span>
+                                <span class="text-danger">.text-danger</span>
+                                <span class="text-warning">.text-warning</span>
+                                <span class="text-info">.text-info</span>
+                            </div>
+                        </div>
+                        <div class="utility-section">
+                            <h6>Background Colors</h6>
+                            <div class="bg-demo">
+                                <span class="bg-primary text-white">.bg-primary</span>
+                                <span class="bg-success text-white">.bg-success</span>
+                                <span class="bg-danger text-white">.bg-danger</span>
+                                <span class="bg-warning text-dark">.bg-warning</span>
+                            </div>
+                        </div>
+                        <div class="utility-section">
+                            <h6>Display Utilities</h6>
+                            <div class="display-demo">
+                                <span class="d-inline p-2 bg-primary text-white">.d-inline</span>
+                                <span class="d-block p-2 bg-success text-white">.d-block</span>
+                                <span class="d-inline-block p-2 bg-danger text-white">.d-inline-block</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reflection -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="reflection-card p-4 rounded" style="background-color: #1e2130; border-left: 4px solid #ff471d;">
+                        <h4 style="color: #ffffff;"><i class="fas fa-lightbulb me-2 text-warning"></i>Reflection: What I Learned</h4>
+                        <p class="mb-0" style="color: #cccccc;">Bootstrap significantly accelerated my development workflow. I learned that I don't need to write custom media queries for every single layout change. By understanding the 12-column grid and utilizing breakpoint classes, I could ensure my portfolio looked perfect on both my laptop and my smartphone with minimal effort.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal Component -->
+    <div class="modal fade" id="demoModal" tabindex="-1" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title"><i class="fas fa-rocket me-2"></i>Bootstrap Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <p>This is a Bootstrap Modal component! Modals are dialog boxes that overlay the current page.</p>
+                    <ul>
+                        <li>Click the backdrop or the X button to close</li>
+                        <li>Can contain any HTML content</li>
+                        <li>Supports multiple sizes and positions</li>
+                        <li>Fully accessible with keyboard navigation</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save Changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Section 5: JavaScript -->
+    <section id="javascript" class="content-section section-dark">
+        <div class="container">
+            <div class="row mb-5">
+                <div class="col-lg-8">
+                    <div class="section-header">
+                        <span class="section-number">05</span>
+                        <span class="section-label">LOGIC</span>
+                    </div>
+                    <h2 class="section-title">JAVASCRIPT</h2>
+                    <p class="section-intro">JavaScript is a versatile, high-level programming language that enables interactive web pages. It is an essential part of web applications, allowing for client-side script execution, DOM manipulation, event handling, and asynchronous operations.</p>
+                </div>
+            </div>
+
+            <!-- JavaScript Interactive Console -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <div class="js-console-playground">
+                        <div class="playground-header">
+                            <h4><i class="fas fa-terminal me-2"></i>INTERACTIVE JAVASCRIPT CONSOLE</h4>
+                            <p class="playground-desc">Run JavaScript code and see the results instantly!</p>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="js-editor">
+                                    <div class="editor-toolbar">
+                                        <span class="toolbar-label">script.js</span>
+                                        <div>
+                                            <button class="btn btn-sm btn-outline-success me-2" onclick="runJsCode()">
+                                                <i class="fas fa-play me-1"></i>Run
+                                            </button>
+                                            <button class="btn btn-sm btn-outline-secondary" onclick="clearJsConsole()">Clear</button>
+                                        </div>
+                                    </div>
+                                    <textarea class="code-editor" id="jsEditor" spellcheck="false">// Welcome to the JS Console!
+// Try running this code or write your own.
+
+// Variables and Data Types
+let name = "Full Stack Developer";
+const year = 2024;
+var active = true;
+
+console.log("Name:", name);
+console.log("Year:", year);
+console.log("Active:", active);
+
+// Technical Skills Showcase
+const technologies = ["HTML", "CSS", "JS", "Bootstrap"];
+console.log("Tech Stack:", technologies);
+console.log("Count:", technologies.length);
+
+// Welcome Message Generator
+function greet(user) {
+  return "Hello, " + user + "!";
+}
+
+console.log(greet("Visitor"));
+
+// My Developer Profile
+const developer = {
+  role: "Full Stack",
+  skills: ["Frontend", "Backend"],
+  experience: 2
+};
+
+console.log("Developer:", developer);</textarea>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="js-output">
+                                    <div class="output-header">Console Output</div>
+                                    <div class="output-body" id="jsConsoleOutput">
+                                        <div class="console-line"><span class="console-prompt">></span> Click "Run" to execute JavaScript code...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JS DOM Manipulation Demo -->
+            <div class="row mb-5">
+                <div class="col-12">
+                    <h4 class="subsection-title"><i class="fas fa-hand-pointer me-2"></i>DOM MANIPULATION DEMO</h4>
+                    <p class="subsection-desc">JavaScript can dynamically modify HTML content, styles, and attributes. This is the foundation of interactive web applications.</p>
+                    <div class="dom-demo">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="dom-target" id="domTarget">
+                                    <h5 id="domHeading">Original Heading</h5>
+                                    <p id="domParagraph">This text can be modified with JavaScript.</p>
+                                    <div class="dom-box" id="domBox"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="dom-controls">
+                                    <h6>Try these DOM operations:</h6>
+                                    <button class="btn btn-sm btn-primary mb-2" onclick="changeText()">
+                                        <i class="fas fa-font me-2"></i>Change Text Content
+                                    </button>
+                                    <button class="btn btn-sm btn-success mb-2" onclick="changeStyle()">
+                                        <i class="fas fa-palette me-2"></i>Change Style
+                                    </button>
+                                    <button class="btn btn-sm btn-warning mb-2" onclick="toggleClass()">
+                                        <i class="fas fa-toggle-on me-2"></i>Toggle Class
+                                    </button>
+                                    <button class="btn btn-sm btn-info mb-2" onclick="addElement()">
+                                        <i class="fas fa-plus me-2"></i>Add Element
+                                    </button>
+                                    <button class="btn btn-sm btn-danger mb-2" onclick="removeElement()">
+                                        <i class="fas fa-trash me-2"></i>Remove Last Element
+                                    </button>
+                                    <button class="btn btn-sm btn-secondary mb-2" onclick="resetDom()">
+                                        <i class="fas fa-undo me-2"></i>Reset
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dom-code mt-3">
+                            <pre id="domCodeDisplay"><code>// DOM manipulation examples:
+document.getElementById('heading').textContent = 'New Text';
+document.getElementById('box').style.backgroundColor = 'blue';
+element.classList.add('highlight');
+parent.appendChild(newElement);
+parent.removeChild(lastChild);</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JS Event Handling -->
+            <div class="row mb-5">
+                <div class="col-lg-6">
+                    <h4 class="subsection-title"><i class="fas fa-bolt me-2"></i>EVENT HANDLING</h4>
+                    <p class="subsection-desc">JavaScript responds to user interactions through event listeners.</p>
+                    <div class="event-demo" id="eventDemo">
+                        <div class="event-zone" id="eventZone">
+                            <span>Interact with me!</span>
+                        </div>
+                        <div class="event-log" id="eventLog">
+                            <div class="log-header">Event Log</div>
+                            <div class="log-body" id="logBody">Try clicking, hovering, or double-clicking the box above.</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <h4 class="subsection-title"><i class="fas fa-sync me-2"></i>ASYNC JAVASCRIPT</h4>
+                    <p class="subsection-desc">JavaScript handles asynchronous operations with Promises, async/await, and callbacks.</p>
+                    <div class="async-demo">
+                        <div class="async-visual" id="asyncVisual">
+                            <div class="async-step" id="async1">
+                                <i class="fas fa-hourglass-start"></i>
+                                <span>Start Request</span>
+                            </div>
+                            <div class="async-arrow"></div>
+                            <div class="async-step" id="async2">
+                                <i class="fas fa-spinner fa-spin"></i>
+                                <span>Loading...</span>
+                            </div>
+                            <div class="async-arrow"></div>
+                            <div class="async-step" id="async3">
+                                <i class="fas fa-check"></i>
+                                <span>Data Received!</span>
+                            </div>
+                        </div>
+                        <button class="btn btn-primary" onclick="simulateAsync()">
+                            <i class="fas fa-play me-2"></i>Simulate API Request
+                        </button>
+                        <div class="async-code mt-3">
+                            <pre><code>// Async/Await Pattern
+async function fetchData() {
+  try {
+    const response = await fetch('/api/data');
+    const data = await response.json();
+    console.log(data);
+  } catch (error) {
+    console.error(error);
+  }
+}</code></pre>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- JS Data Structures -->
+            <div class="row">
+                <div class="col-12">
+                    <h4 class="subsection-title"><i class="fas fa-database me-2"></i>DATA STRUCTURES & ARRAY METHODS</h4>
+                    <div class="data-structures-demo">
+                        <div class="row">
+                            <div class="col-lg-6">
+                                <div class="ds-card">
+                                    <h6>Technical Skills Data</h6>
+                                    <div class="array-input">
+                                        <label>Array: <code>["HTML", "CSS", "JS", "Bootstrap", "React"]</code></label>
+                                    </div>
+                                    <div class="array-buttons">
+                                        <button class="btn btn-sm btn-outline-light" onclick="runArrayMethod('map')">.map()</button>
+                                        <button class="btn btn-sm btn-outline-light" onclick="runArrayMethod('filter')">.filter()</button>
+                                        <button class="btn btn-sm btn-outline-light" onclick="runArrayMethod('find')">.find()</button>
+                                        <button class="btn btn-sm btn-outline-light" onclick="runArrayMethod('reduce')">.reduce()</button>
+                                        <button class="btn btn-sm btn-outline-light" onclick="runArrayMethod('sort')">.sort()</button>
+                                        <button class="btn btn-sm btn-outline-light" onclick="runArrayMethod('forEach')">.forEach()</button>
+                                    </div>
+                                    <div class="array-output" id="arrayOutput">Click a method to see the result...</div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6">
+                                <div class="ds-card">
+                                    <h6>Developer Profile Object</h6>
+                                    <pre class="code-block"><code>const developer = {
+  name: "Web Developer",
+  role: "Full Stack",
+  skills: ["HTML", "CSS", "JS"],
+  experience: 3,
+  isActive: true
+};
+
+// Access: developer.name → "Alex"
+// Keys: Object.keys(developer)
+// Values: Object.values(developer)
+// Entries: Object.entries(developer)</code></pre>
+                                    <button class="btn btn-sm btn-primary mt-2" onclick="runObjectDemo()">
+                                        <i class="fas fa-play me-2"></i>Run Object Demo
+                                    </button>
+                                    <div class="object-output mt-2" id="objectOutput"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+            <!-- JS Game Showcase -->
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-10 text-center">
+                    <div class="game-header mb-4">
+                        <h4 class="subsection-title mb-2" style="display: inline-block; border-bottom: 2px solid var(--bg-accent); padding-bottom: 5px;"><i class="fas fa-gamepad me-2"></i>THE RUNNER</h4>
+                        <p class="subsection-desc mx-auto mt-2" style="max-width: 550px; font-size: 0.9rem; opacity: 0.8;">A custom-built HTML5 Canvas game demonstrating object-oriented JS, requestAnimationFrame loop, physics, and collision detection.</p>
+                    </div>
+                    <div class="game-container" id="gameWrapper">
+                        <div class="game-ui">
+                            <span id="gameScore">SCORE: 0</span>
+                            <span id="gameHighScore">HI: 0</span>
+                        </div>
+                        <canvas id="jsGameCanvas" width="800" height="250"></canvas>
+                        <div class="game-overlay" id="gameOverScreen">
+                            <h5>SYSTEM FAILURE</h5>
+                            <p>COLLISION DETECTED</p>
+                            <button class="btn btn-outline-danger" id="btnRestartGame">REBOOT</button>
+                        </div>
+                        <div class="game-overlay" id="gameStartScreen">
+                            <h5>THE RUNNER</h5>
+                            <p>PRESS SPACE OR TAP TO INITIATE JUMP SEQUENCE</p>
+                            <button class="btn btn-outline-success" id="btnStartGame">START SEQUENCE</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- JS Calculator Demo -->
+            <div class="row mt-5 justify-content-center">
+                <div class="col-lg-8">
+                    <h4 class="subsection-title"><i class="fas fa-calculator me-2"></i>INTERACTIVE CALCULATOR</h4>
+                    <p class="subsection-desc">A demonstration of DOM manipulation, variables, functions, and event listeners working together to perform logic.</p>
+                    <div class="calculator-demo" style="background: var(--bg-darker); border-radius: 10px; padding: 30px; box-shadow: 0 5px 15px rgba(0,0,0,0.3);">
+                        <div class="row align-items-center">
+                            <div class="col-md-5 text-center mb-4 mb-md-0">
+                                <div style="background: #222; padding: 20px; border-radius: 8px; border: 1px solid #444; width: 220px; margin: 0 auto;">
+                                    <div id="calcDisplay" style="background: #cfd8dc; color: #333; padding: 10px; font-size: 1.5rem; text-align: right; border-radius: 4px; margin-bottom: 15px; font-family: monospace; min-height: 48px;">0</div>
+                                    <div class="row g-2">
+                                        <div class="col-3"><button class="btn btn-secondary w-100" onclick="calcInput('7')">7</button></div>
+                                        <div class="col-3"><button class="btn btn-secondary w-100" onclick="calcInput('8')">8</button></div>
+                                        <div class="col-3"><button class="btn btn-secondary w-100" onclick="calcInput('9')">9</button></div>
+                                        <div class="col-3"><button class="btn btn-warning w-100" onclick="calcOp('/')">/</button></div>
+                                        
+                                        <div class="col-3"><button class="btn btn-secondary w-100" onclick="calcInput('4')">4</button></div>
+                                        <div class="col-3"><button class="btn btn-secondary w-100" onclick="calcInput('5')">5</button></div>
+                                        <div class="col-3"><button class="btn btn-secondary w-100" onclick="calcInput('6')">6</button></div>
+                                        <div class="col-3"><button class="btn btn-warning w-100" onclick="calcOp('*')">*</button></div>
+                                        
+                                        <div class="col-3"><button class="btn btn-secondary w-100" onclick="calcInput('1')">1</button></div>
+                                        <div class="col-3"><button class="btn btn-secondary w-100" onclick="calcInput('2')">2</button></div>
+                                        <div class="col-3"><button class="btn btn-secondary w-100" onclick="calcInput('3')">3</button></div>
+                                        <div class="col-3"><button class="btn btn-warning w-100" onclick="calcOp('-')">-</button></div>
+                                        
+                                        <div class="col-3"><button class="btn btn-danger w-100" onclick="calcClear()">C</button></div>
+                                        <div class="col-3"><button class="btn btn-secondary w-100" onclick="calcInput('0')">0</button></div>
+                                        <div class="col-3"><button class="btn btn-success w-100" onclick="calcCalculate()">=</button></div>
+                                        <div class="col-3"><button class="btn btn-warning w-100" onclick="calcOp('+')">+</button></div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <pre class="code-block" style="margin-bottom: 0;"><code>// JavaScript Calculator Logic
+let currentVal = '';
+let previousVal = '';
+let operator = null;
+
+function calcCalculate() {
+  const prev = parseFloat(previousVal);
+  const current = parseFloat(currentVal);
+  if (isNaN(prev) || isNaN(current)) return;
+  
+  let computation;
+  switch (operator) {
+    case '+': computation = prev + current; break;
+    case '-': computation = prev - current; break;
+    case '*': computation = prev * current; break;
+    case '/': computation = prev / current; break;
+    default: return;
+  }
+  
+  // DOM Manipulation: Update display
+  document.getElementById('calcDisplay').innerText = computation;
+}</code></pre>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Reflection -->
+            <div class="row mt-5 mb-5">
+                <div class="col-12">
+                    <div class="reflection-card p-4 rounded" style="background-color: #1e2130; border-left: 4px solid #ff471d;">
+                        <h4 style="color: #ffffff;"><i class="fas fa-lightbulb me-2 text-warning"></i>Reflection: What I Learned</h4>
+                        <p class="mb-0" style="color: #cccccc;">Writing the JavaScript for this portfolio solidified my understanding of Object-Oriented Programming, DOM manipulation, and event-driven architecture. Building interactive elements like the Calculator and the Game Engine taught me how to manage application state over time. Seeing my code directly translate into a functional experience proved to me the true power of client-side JavaScript.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer / Contact Section -->
+    <footer id="contact" class="footer-section">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-8">
+                    <h2 class="footer-title" id="footerTitle">INITIALIZE CONTACT SEQUENCE</h2>
+                    <p class="footer-desc">Ready to build something amazing together? Let's connect and create impactful digital experiences.</p>
+                    <div class="footer-links">
+                        <a href="mailto:purushottamghimire67@gmail.com" class="footer-link">
+                            <i class="fas fa-envelope me-2"></i>purushottamghimire67@gmail.com
+                        </a>
+                        <a href="https://github.com/purushottamghimire67-stack" class="footer-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-github me-2"></i>github.com/purushottamghimire67-stack
+                        </a>
+                        <a href="https://www.linkedin.com/in/purushottam-ghimire-069781409/" class="footer-link" target="_blank" rel="noopener noreferrer">
+                            <i class="fab fa-linkedin me-2"></i>linkedin.com/in/purushottam-ghimire-069781409
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 text-lg-end">
+                    <div class="ascii-globe" id="asciiGlobe"></div>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="footer-bottom">
+                        <span>Built with HTML, CSS, JavaScript & Bootstrap</span>
+                        <span class="footer-year">2024</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" onclick="scrollToTop()">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
