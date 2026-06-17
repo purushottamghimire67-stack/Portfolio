@@ -1,6 +1,6 @@
 
 
-> Demonstrating my understanding of core Full Stack Development concepts taught in CET138.
+> Demonstrating my understanding of core Full Stack Development concepts.
 
 ---
 
@@ -12,7 +12,7 @@
 
 ##  What Is This Website?
 
-This is an interactive **ePortfolio** built as part of Assignment 1 for the CET138 Full Stack Development module. It demonstrates my knowledge and understanding of the five core topics covered throughout the course, presented as a fully functional, professional-looking website.
+This is an interactive **ePortfolio** built as part of my learning venture. It demonstrates my knowledge and understanding of the five core topics covered throughout the course, presented as a fully functional, professional-looking website.
 
 Rather than submitting a plain document, this portfolio is itself the evidence — it is a **full stack web application** that showcases the very skills it describes.
 
