@@ -1,0 +1,126 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+    body { background-color: #1e1e1e; color: #d4d4d4; font-family: Consolas, 'Courier New', monospace; padding: 20px; }
+    .code-window { background: #1e1e1e; border-radius: 6px; padding: 15px; margin-bottom: 20px; border: 1px solid #333; display: inline-block; box-shadow: 0 4px 6px rgba(0,0,0,0.3); }
+    .keyword { color: #569cd6; }
+    .string { color: #ce9178; }
+    .comment { color: #6a9955; }
+    .function { color: #dcdcaa; }
+    .tag { color: #569cd6; }
+    .attr { color: #9cdcfe; }
+    .class-name { color: #4ec9b0; }
+    pre { margin: 0; font-size: 14px; line-height: 1.5; }
+</style>
+</head>
+<body>
+
+<div id="code_html_structure" class="code-window">
+<pre>
+<span class="comment">&lt;!-- Main Content Area --&gt;</span>
+&lt;<span class="tag">section</span> <span class="attr">id</span>=<span class="string">"html"</span> <span class="attr">class</span>=<span class="string">"content-section"</span>&gt;
+    &lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;
+        &lt;<span class="tag">h2</span>&gt;HTML Capabilities&lt;/<span class="tag">h2</span>&gt;
+        &lt;<span class="tag">p</span>&gt;This section demonstrates my HTML knowledge.&lt;/<span class="tag">p</span>&gt;
+    &lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">section</span>&gt;
+</pre>
+</div>
+
+<div id="code_css_variables" class="code-window">
+<pre>
+<span class="tag">:root</span> {
+    <span class="attr">--bg-primary</span>: <span class="string">#121215</span>;
+    <span class="attr">--bg-secondary</span>: <span class="string">#1b1b1b</span>;
+    <span class="attr">--text-primary</span>: <span class="string">#e5dcd1</span>;
+    <span class="attr">--bg-accent</span>: <span class="string">#ff471d</span>;
+    <span class="attr">--font-primary</span>: <span class="string">'Space Mono'</span>, monospace;
+}
+</pre>
+</div>
+
+<div id="code_js_live_editor" class="code-window">
+<pre>
+window.<span class="function">addEventListener</span>(<span class="string">'message'</span>, <span class="keyword">function</span>(e) {
+    <span class="keyword">if</span> (e.data && e.data.action === <span class="string">'focusEditor'</span>) {
+        <span class="keyword">const</span> editor = document.<span class="function">getElementById</span>(<span class="string">'htmlEditor'</span>);
+        editor.<span class="function">focus</span>();
+        
+        <span class="comment">// Automatically highlight the text to edit</span>
+        <span class="keyword">const</span> searchStr = <span class="string">'Hello World!'</span>;
+        <span class="keyword">const</span> index = editor.value.<span class="function">indexOf</span>(searchStr);
+        <span class="keyword">if</span> (index !== -1) {
+            editor.<span class="function">setSelectionRange</span>(index, index + searchStr.length);
+        }
+    }
+});
+</pre>
+</div>
+
+<div id="code_js_game_loop" class="code-window">
+<pre>
+<span class="keyword">class</span> <span class="class-name">GameEngine</span> {
+    <span class="function">updatePhysics</span>() {
+        <span class="comment">// Apply gravity to the player's vertical velocity</span>
+        <span class="keyword">this</span>.player.vy += <span class="keyword">this</span>.gravity;
+        <span class="keyword">this</span>.player.y += <span class="keyword">this</span>.player.vy;
+        
+        <span class="comment">// Ground collision detection</span>
+        <span class="keyword">const</span> groundY = <span class="keyword">this</span>.height - <span class="number">20</span>;
+        <span class="keyword">if</span> (<span class="keyword">this</span>.player.y + <span class="keyword">this</span>.player.height >= groundY) {
+            <span class="keyword">this</span>.player.y = groundY - <span class="keyword">this</span>.player.height;
+            <span class="keyword">this</span>.player.vy = <span class="number">0</span>;
+            <span class="keyword">this</span>.player.isJumping = <span class="keyword">false</span>;
+        }
+    }
+}
+</pre>
+</div>
+
+<div id="code_bootstrap_navbar" class="code-window">
+<pre>
+<span class="comment">&lt;!-- Responsive Bootstrap Navbar --&gt;</span>
+&lt;<span class="tag">nav</span> <span class="attr">class</span>=<span class="string">"navbar navbar-expand-lg navbar-dark bg-dark sticky-top"</span>&gt;
+  &lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="string">"container"</span>&gt;
+    &lt;<span class="tag">a</span> <span class="attr">class</span>=<span class="string">"navbar-brand"</span> <span class="attr">href</span>=<span class="string">"#"</span>&gt;My Portfolio&lt;/<span class="tag">a</span>&gt;
+    &lt;<span class="tag">button</span> <span class="attr">class</span>=<span class="string">"navbar-toggler"</span> <span class="attr">type</span>=<span class="string">"button"</span> <span class="attr">data-bs-toggle</span>=<span class="string">"collapse"</span> <span class="attr">data-bs-target</span>=<span class="string">"#navbarNav"</span>&gt;
+      &lt;<span class="tag">span</span> <span class="attr">class</span>=<span class="string">"navbar-toggler-icon"</span>&gt;&lt;/<span class="tag">span</span>&gt;
+    &lt;/<span class="tag">button</span>&gt;
+    &lt;<span class="tag">div</span> <span class="attr">class</span>=<span class="string">"collapse navbar-collapse"</span> <span class="attr">id</span>=<span class="string">"navbarNav"</span>&gt;
+      &lt;<span class="tag">ul</span> <span class="attr">class</span>=<span class="string">"navbar-nav ms-auto"</span>&gt;
+        &lt;<span class="tag">li</span> <span class="attr">class</span>=<span class="string">"nav-item"</span>&gt;&lt;<span class="tag">a</span> <span class="attr">class</span>=<span class="string">"nav-link"</span> <span class="attr">href</span>=<span class="string">"#html"</span>&gt;HTML&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">li</span>&gt;
+        &lt;<span class="tag">li</span> <span class="attr">class</span>=<span class="string">"nav-item"</span>&gt;&lt;<span class="tag">a</span> <span class="attr">class</span>=<span class="string">"nav-link"</span> <span class="attr">href</span>=<span class="string">"#css"</span>&gt;CSS&lt;/<span class="tag">a</span>&gt;&lt;/<span class="tag">li</span>&gt;
+      &lt;/<span class="tag">ul</span>&gt;
+    &lt;/<span class="tag">div</span>&gt;
+  &lt;/<span class="tag">div</span>&gt;
+&lt;/<span class="tag">nav</span>&gt;
+</pre>
+</div>
+
+<div id="code_js_calculator" class="code-window">
+<pre>
+<span class="comment">// CALCULATOR STATE &amp; COMPUTATION</span>
+window.<span class="function">calcCalculate</span> = <span class="keyword">function</span>() {
+    <span class="keyword">let</span> computation;
+    <span class="keyword">const</span> prev = <span class="function">parseFloat</span>(calcPreviousVal);
+    <span class="keyword">const</span> current = <span class="function">parseFloat</span>(calcCurrentVal);
+    <span class="keyword">if</span> (<span class="function">isNaN</span>(prev) || <span class="function">isNaN</span>(current)) <span class="keyword">return</span>;
+    <span class="keyword">switch</span> (calcOperator) {
+        <span class="keyword">case</span> <span class="string">'+'</span>: computation = prev + current; <span class="keyword">break</span>;
+        <span class="keyword">case</span> <span class="string">'-'</span>: computation = prev - current; <span class="keyword">break</span>;
+        <span class="keyword">case</span> <span class="string">'*'</span>: computation = prev * current; <span class="keyword">break</span>;
+        <span class="keyword">case</span> <span class="string">'/'</span>: computation = prev / current; <span class="keyword">break</span>;
+        <span class="keyword">default</span>: <span class="keyword">return</span>;
+    }
+    calcCurrentVal = computation.<span class="function">toString</span>();
+    calcOperator = <span class="keyword">null</span>;
+    calcPreviousVal = <span class="string">''</span>;
+    <span class="function">updateCalcDisplay</span>();
+};
+</pre>
+</div>
+
+</body>
+</html>
